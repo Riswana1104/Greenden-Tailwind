@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- tailwind link -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Greenden</title>
+</head>
+
+<body>
+    <!-- Responsive Navbar -->
+    <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-3xl text-bolder lg:text-2xl ">Greenden</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-8 h-8 md:hidden ">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class="flex gap-3  hidden md:flex ">
+            <li>
+                <a class="text-green-600 text-black " href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="text-green-600 hover:text-black underline" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="text-green-600 hover:text-black  " href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- header -->
+    <div class="p-4 text-center text-2xl md:text-xl">
+        <h1 class="text-3xl font-bold mt-5">Products</h1>
+    </div>
+    <section class="text-center text-2xl md:text-xl">
+        <form>
+            <input  id="search"
+                class="block inline  p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-md bg-gray-50 focus:ring-blue-500  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white "
+                style="width: 80%;" placeholder="Search for a products" >
+        </form>
+    </section>
+    <!-- size Navbar -->
+    <section id="sidenav" class="bg-green-200 fixed z-20 top-0 transition-all duration-1000"
+        style="width: 50%; height: 100vh; right: -50%">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-green-600">
+            <li><a href="./index.html" class="hover:text-black hover:underline">Home</a></li>
+            <li><a href="./products.html" class="hover:text-black hover:underline">Products</a></li>
+            <li><a href="./contact.html" class="hover:text-black hover:underline">Contact</a></li>
+        </ul>
+    </section>
+    <!-- products -->
+    <section class="p-4 text-center md:text-xl  ">
+        <div id="product-container" class="grid grid-cols-2 font-medium md:font-medium md:grid-cols-4 mt-10 gap-5">
+            <div>
+                <img src="./images/pot1.jpg "
+                    class="inline hover:shadow-xl w transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Rose Plant</h2>
+                <p class="font-bold">20$</p>
+            
+        
+            </div>
+            <div>
+                <img src="./images/bs5.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Bougainvillea Plant</h2>
+                <p class="font-bold">30$</p>
+            </div>
+            <div>
+                <img src="./images/bs3.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Snake Plant</h2>
+                <p class="font-bold">50$</p>
+            </div>
+            <div>
+                <img src="./images/bs4.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Spider Plant</h2>
+                <p class="font-bold">40$</p>
+            </div>
+            <!-- 2 -->
+            <div class="product text-center mb-5">
+                <img src="./images/pl1.jpg" class="inline w-60 h-64 object-cover hover:shadow-xl transform hover:-translate-y-2 mb-3" alt="Spider Plant">
+                <h2>Green cactus</h2>
+                <p class="font-bold">50$</p>
+            </div>
+            <div class="product text-center mb-5">
+                <img src="./images/pl2.jpg" class="inline w-60 h-64 object-cover hover:shadow-xl transform hover:-translate-y-2 mb-3" alt="Spider Plant">
+                <h2>Money Plant</h2>
+                <p class="font-bold">50$</p>
+            </div>
+            <div>
+                <img src="./images/pl3.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Begonia Plant</h2>
+                <p class="font-bold">50$</p>
+            </div>
+            <div>
+                <img src="./images/pl4.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Euphorbia milii plant</h2>
+                <p class="font-bold">30$</p>
+            </div>
+            <div>
+                <img src="./images/pl5.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Hydrangea Plant</h2>
+                <p class="font-bold">70$</p>
+            </div>
+            <div>
+                <img src="./images/pl6.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Daffodil Plant</h2>
+                <p class="font-bold">50$</p>
+            </div>
+            <div>
+                <img src="./images/pl7.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Tulip Plant</h2>
+                <p class="font-bold">90$</p>
+            </div>
+            <div>
+                <img src="./images/pl8.jpg"
+                    class="inline hover:shadow-xl  transform w-3/4 md:w-auto hover:-translate-y-2 mb-3" alt="">
+                <h2>Orchid Plant</h2>
+                <p class="font-bold">50$</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- footer -->
+    <section class="bg-green-100 p-10 flex flex-col gap-5 mt-5">
+        <h1 class="text-4xl font-bold">Greendon</h1>
+        <p>The Standard chunk of lorem ipsum since the 1500s is reprodused below for those intrest</p>
+        <p>@ 2021 Greenday.com</p>
+    </section>
+    <script src="products.js"></script>
+</body>
+
+</html>
